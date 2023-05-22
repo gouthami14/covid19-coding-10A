@@ -28,6 +28,7 @@ const initializeDBAndServer = async () => {
     process.exit(1);
   }
 };
+initializeDBAndServer();
 
 const convertStateDbObjectToResponseObject = (dbObject) => {
   return {
