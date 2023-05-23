@@ -60,7 +60,7 @@ function authenticateToken(request, response, next) {
     response.status(401);
     response.send("Invalid JWT Token");
   } else {
-    jwt.verify(jwtToken, "MT_SECRET_TOKEN", async (error, payload) => {
+    jwt.verify(jwtToken, "MY_SECRET_TOKEN", async (error, payload) => {
       if (error) {
         response.status(401);
         response.send("Invalid JWT Token");
