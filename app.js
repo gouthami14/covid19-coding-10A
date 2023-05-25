@@ -162,7 +162,7 @@ app.put(
     district_name = '${districtName}',
     state_id = ${stateId},
     cases = ${cases},
-    cured = ${cures},
+    cured = ${cured},
     active = ${active},
     deaths = ${deaths};
     WHERE district_id = ${districtId};`;
