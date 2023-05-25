@@ -188,7 +188,7 @@ app.get(
     const stats = await database.get(getStateStatsQuery);
     response.send({
       totalCases: stats["SUM(cases)"],
-      totalCured: stats["SUM(cured"],
+      totalCured: stats["SUM(cured)"],
       totalActive: stats["SUM(active)"],
       totalDeaths: stats["SUM(deaths)"],
     });
